@@ -1,86 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 .circles {
-    height: 500px;
-    width: 500px;
-    border: 1px solid black;
+  margin: 3rem auto;
+  height: 500px;
+  width: 500px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-
-.circle div {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 10px;
-    border: 1px black solid;
-    transition: transform 1s, background-color 1s;
-    
+.circles div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+  border: 1px black solid;
+  transition: transform 1s, background-color 1s;
 }
 
-.circle div:hover {
-    transform: translateX(20px) translateY(10px) scale(2); 
-    
+.circles div:hover {
+  transform: translateX(20px) translateY(10px) scale(2);
 }
 
 #red-circle:hover {
-    background-color: white;
-    
+  background-color: white;
 }
 #orange-circle:hover {
-    background-color: white;
+  background-color: white;
 }
 #yellow-circle:hover {
-    background-color: white;
+  background-color: white;
 }
 #green-circle:hover {
-    background-color: white;
+  background-color: white;
 }
 #blue-circle:hover {
-    background-color: white;
+  background-color: white;
 }
 #purple-circle:hover {
-    background-color: white;
+  background-color: white;
 }
 #pink-circle:hover {
-    background-color: white;
+  background-color: white;
 }
-
 
 #red-circle {
-    background-color: red;
-    animation: bounce 3.5s ease infinite alternate forwards; 
+  background-color: red;
+  animation: bounce 3.5s ease infinite alternate forwards;
 }
 #orange-circle {
-    background-color: orange;
-    animation: bounce 3s ease-in infinite alternate forwards; 
+  background-color: orange;
+  animation: bounce 3s ease-in infinite alternate forwards;
 }
 #yellow-circle {
-    background-color: yellow;
-    animation: bounce 2.5s ease-out infinite alternate forwards; 
+  background-color: yellow;
+  animation: bounce 2.5s ease-out infinite alternate forwards;
 }
 #green-circle {
-    background-color: green;
-    animation: bounce 2s linear infinite alternate forwards; 
+  background-color: green;
+  animation: bounce 2s linear infinite alternate forwards;
 }
 #blue-circle {
-    background-color: blue;
-    animation: bounce 1.5s linear infinite alternate forwards; 
+  background-color: blue;
+  animation: bounce 1.5s linear infinite alternate forwards;
 }
 #purple-circle {
-    background-color: purple;
-    animation: bounce 1s linear infinite alternate forwards; 
+  background-color: purple;
+  animation: bounce 1s linear infinite alternate forwards;
 }
 #pink-circle {
-    background-color: pink;
-    animation: bounce 0.5s linear infinite alternate forwards; 
+  background-color: pink;
+  animation: bounce 0.5s linear infinite alternate forwards;
 }
 
 @keyframes bounce {
-    /*33% {
+  /*33% {
         transform: translate(100px);
     }
     66% {
         transform: translate(200px);
     }*/
-    100% {
-        transform: translate(400px);
-    }
+  100% {
+    transform: translate(400px);
+  }
 }
