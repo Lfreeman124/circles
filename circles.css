@@ -19,6 +19,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  .circles {
+    width: 100%;
+  }
+}
 
 .circles div {
   width: 50px;
@@ -93,5 +98,13 @@ body {
     }*/
   100% {
     transform: translate(400px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  @keyframes bounce {
+    100% {
+      transform: translate(300px);
+    }
   }
 }
